@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>AIGNUS - AI Education Ecosystem</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+  <nav class="navbar">
+    <!-- Logo -->
+    <a class="logo" href="AIGNUS.htm">
+      <img alt="AIGNUS.png" src="logo.png" />AIGNUS
+    </a>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links (Includes Get Started for mobile) -->
+    <div class="nav-links" id="nav-links">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#how-it-works">How It Works</a>
+      <a class="nav-link" href="chat.htm">AI Faculty</a>
+      <a class="btn btn-primary mobile-only" href="signup.htm">Get Started</a>
+    </div>
+
+    <!-- Always-visible actions -->
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+      <a class="btn btn-outline" href="#" onclick="logout()">Logout</a>
+      <a class="btn btn-outline" href="signup.htm">Sign Up</a>
+    </div>
+  </nav>
+</header>
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <h1>AI-Powered Education for Teachers and Students</h1>
+
+                <p>AIGNUS brings the power of AI to your classroom with specialized teaching assistants, lesson planning tools, and personalized learning experiences.</p>
+
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="signup.htm">Get Started Free</a>
+                    <a class="btn btn-outline" href="chat.htm">Chat with Faculty</a>
+                </div>
+
+                <img alt="AIGNUS Platform" class="hero-image" src="photo 1.png"/>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section" id="features">
+            <div class="section-title">
+                <h2>Transform Your Classroom with AI</h2>
+                <p>AIGNUS provides everything educators need to harness the power of AI while maintaining academic integrity.</p>
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+
+                    <h3>AI Teaching Assistants</h3>
+                    <p>Specialized AI faculty members covering all subjects and grade levels with pedagogical expertise.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+
+                    <h3>Lesson Planning</h3>
+                    <p>Generate complete lesson plans, activities, and assessments in seconds, aligned to standards.</p>
+                </div>
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+
+                    <h3>Walled Garden</h3>
+                    <p>Safe, controlled environment with content filtering and academic integrity protections.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <h3>Real-time Analytics</h3>
+                    <p>Track student engagement and learning outcomes with detailed dashboards.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+
+                    <h3>Multilingual Support</h3>
+                    <p>Supports 16 languages to help ESL students and diverse classrooms.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+
+                    <h3>EdTech Integrations</h3>
+                    <p>Works seamlessly with 15+ popular educational platforms and tools.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="section" id="how-it-works" >
+   <div class="section-title">
+    <h2>
+     How AIGNUS Works
+    </h2>
+    <p>
+     Getting started with AI-powered education is simple and intuitive.
+    </p>
+   </div>
+   <div class="steps">
+    <div class="step">
+     <div class="step-number">
+      1
+     </div>
+     <div class="step-content">
+      <h3>
+       Sign Up for Free
+      </h3>
+      <p>
+       Create your account in seconds. No credit card required to start exploring.
+      </p>
+     </div>
+    </div>
+    <div class="step">
+     <div class="step-number">
+      2
+     </div>
+     <div class="step-content">
+      <h3>
+       Choose Your AI Faculty
+      </h3>
+      <p>
+       Select from our team of specialized AI teaching assistants based on your subject and grade level.
+      </p>
+     </div>
+    </div>
+    <div class="step">
+     <div class="step-number">
+      3
+     </div>
+     <div class="step-content">
+      <h3>
+       Start Collaborating
+      </h3>
+      <p>
+       Get instant help with lesson planning, student questions, and classroom activities.
+      </p>
+     </div>
+    </div>
+    <div class="step">
+     <div class="step-number">
+      4
+     </div>
+     <div class="step-content">
+      <h3>
+       Enhance Your Teaching
+      </h3>
+      <p>
+       Use AI-generated insights to personalize learning and improve student outcomes.
+      </p>
+     </div>
+    </div>
+   </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+   <h2>
+    Ready to Transform Your Classroom with AI?
+   </h2>
+   <p>
+    Join thousands of educators who are enhancing their teaching with AIGNUS.
+   </p>
+   <div class="cta-buttons">
+    <a class="btn btn-white" href="signup.htm">
+     Get Started Free
+    </a>
+    <a class="btn btn-transparent" href="chat.htm">
+     Chat with Faculty
+    </a>
+   </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+   <div class="footer-container">
+    <div class="footer-about">
+     <div class="footer-logo-stacked">
+  <img src="logo.png" />
+  <span>AIGNUS</span>
+</div>
+
+     </a>
+     <p>
+      AI-powered education tools designed to help teachers and students achieve more.
+     </p>
+     <div class="social-links">
+      <a class="social-link" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-facebook">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="footer-links">
+     <h3>
+      Product
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        Features
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Pricing
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Integrations
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Updates
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Roadmap
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-links">
+     <h3>
+      Resources
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        Blog
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Help Center
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Webinars
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Tutorials
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Community
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-links">
+     <h3>
+      Company
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Careers
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Partners
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Press
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-links">
+     <h3>
+      Legal
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        Privacy Policy
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Terms of Service
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Cookie Policy
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        GDPR
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Security
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>
+     © 2023 AIGNUS Technologies. All rights reserved.
+    </p>
+    <div class="footer-bottom-links">
+     <a href="#">
+      Privacy Policy
+     </a>
+     <a href="#">
+      Terms of Service
+     </a>
+     <a href="#">
+      Cookie Policy
+     </a>
+    </div>
+   </div>
+        </footer>
+
+    </body>
+</html>

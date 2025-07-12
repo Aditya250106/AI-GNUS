@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>AIGNUS - AI Faculty</title>
+  <base href="http://localhost/AI_learning_assistance/" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="/AI_learning_assistance/chat.css" rel="stylesheet"/>
+  <script src="chat.js" defer></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        AIGNUS
+      </div>
+    </div>
+    <div class="faculty-list">
+      <div class="faculty-item active">
+        <div class="faculty-avatar">
+          <i class="fas fa-atom"></i>
+        </div>
+        <div class="faculty-info">
+          <div class="faculty-name">Dr. Quantum</div>
+          <div class="faculty-subject">Physics & Chemistry</div>
+        </div>
+      </div>
+      <div class="faculty-item">
+        <div class="faculty-avatar">
+          <i class="fas fa-calculator"></i>
+        </div>
+        <div class="faculty-info">
+          <div class="faculty-name">Math Mentor</div>
+          <div class="faculty-subject">Mathematics</div>
+        </div>
+      </div>
+      <div class="faculty-item">
+        <div class="faculty-avatar">
+          <i class="fas fa-dna"></i>
+        </div>
+        <div class="faculty-info">
+          <div class="faculty-name">Bio Sage</div>
+          <div class="faculty-subject">Biology</div>
+        </div>
+      </div>
+      <div class="faculty-item">
+        <div class="faculty-avatar">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="faculty-info">
+          <div class="faculty-name">Lit Guide</div>
+          <div class="faculty-subject">English Literature</div>
+        </div>
+      </div>
+      <div class="faculty-item">
+        <div class="faculty-avatar">
+          <i class="fas fa-globe-americas"></i>
+        </div>
+        <div class="faculty-info">
+          <div class="faculty-name">Geo Explorer</div>
+          <div class="faculty-subject">Geography</div>
+        </div>
+      </div>
+      <div class="faculty-item">
+        <div class="faculty-avatar">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="faculty-info">
+          <div class="faculty-name">Code Master</div>
+          <div class="faculty-subject">Computer Science</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Chat Area -->
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="chat-title">Dr. Quantum - Physics & Chemistry</div>
+      <a href="AIGNUS.htm" class="back-home-button">← Back to Home</a>
+    </div>
+
+    <div class="chat-messages">
+      <!-- Messages will appear here dynamically -->
+    </div>
+    
+    <div class="chat-input">
+      <div class="input-group">
+        <input class="chat-input-field" placeholder="Message Dr. Quantum..." type="text"/>
+        <button class="send-button">
+          <i class="fas fa-paper-plane"></i> SEND
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

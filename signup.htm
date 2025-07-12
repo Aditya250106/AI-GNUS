@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIGNUS | Sign Up</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="auth.js" defer></script>
+</head>
+<body class="auth-page">
+  <!-- Floating Icons - Fixed duplicates and positions -->
+  <div class="floating-icon" style="top:10%; left:5%;">📚</div>
+  <div class="floating-icon" style="top:20%; left:80%;">✏️</div>
+  <div class="floating-icon" style="top:70%; left:10%;">🧮</div>
+  <div class="floating-icon" style="top:30%; left:85%;">🔬</div>
+  <div class="floating-icon" style="top:80%; left:20%;">🏫</div>
+  <div class="floating-icon" style="top:85%; left:75%;">🧐</div>
+
+  <!-- Sign-up Form -->
+  <div class="auth-container">
+    <div class="auth-header signup-header">
+      <h1>Join AIGNUS</h1>
+      <p>Start your personalized learning journey today</p>
+    </div>
+
+    <form class="auth-form" id="signupForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required autocomplete="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" name="password" required minlength="8" 
+                 autocomplete="new-password" oninput="checkPasswordStrength()" />
+          <i class="fas fa-eye toggle-icon" onclick="togglePassword('password')" 
+             role="button" aria-label="Toggle password visibility" tabindex="0"></i>
+        </div>
+        <div class="password-strength">
+          <div class="strength-meter" id="strengthMeter"></div>
+          <span id="strengthText"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm_password" required 
+               autocomplete="new-password" />
+      </div>
+      
+      <button type="submit" class="submit-btn">Get Started</button>
+    </form>
+
+    <div class="auth-footer signup-footer">
+      Already have an account? <a href="login.html">Log in</a>
+    </div>
+  </div>
+
+  <script>
+    // Basic form validation (should also be in auth.js)
+    function validateForm() {
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      
+      if (password !== confirmPassword) {
+        alert("Passwords don't match!");
+        return false;
+      }
+      return true;
+    }
+
+    // Password strength checker (should also be in auth.js)
+    function checkPasswordStrength() {
+      const password = document.getElementById('password').value;
+      const meter = document.getElementById('strengthMeter');
+      const text = document.getElementById('strengthText');
+      
+      // Strength logic
+      let strength = 0;
+      if (password.length >= 8) strength++;
+      if (password.match(/[a-z]/) && password.match(/[A-Z]/)) strength++;
+      if (password.match(/[0-9]/)) strength++;
+      if (password.match(/[^A-Za-z0-9]/)) strength++;
+      
+      // Update meter
+      meter.style.width = (strength * 25) + '%';
+      meter.style.backgroundColor = 
+        strength < 2 ? 'red' : strength < 4 ? 'orange' : 'green';
+      
+      // Update text
+      text.textContent = 
+        strength < 2 ? 'Weak' : strength < 4 ? 'Medium' : 'Strong';
+    }
+
+    // Toggle password visibility (should also be in auth.js)
+    function togglePassword(fieldId) {
+      const field = document.getElementById(fieldId);
+      const icon = event.currentTarget;
+      if (field.type === 'password') {
+        field.type = 'text';
+        icon.classList.replace('fa-eye', 'fa-eye-slash');
+      } else {
+        field.type = 'password';
+        icon.classList.replace('fa-eye-slash', 'fa-eye');
+      }
+    }
+  </script>
+</body>
+</html>
